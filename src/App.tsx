@@ -3,10 +3,6 @@ import { useParams } from 'react-router-dom';
 import  { UserContext }  from '../src/contexts/context'
 import { Home } from './pages/Home';
 import { useState, useContext, useEffect } from 'react';
-import { Discover } from './pages/Discover';
-import { Indicators } from './pages/Indicators';
-import { PesquisadoresPage } from './pages/PesquisadoresPage';
-import { Login } from './pages/Login';
 
 
 import { client } from './lib/apollo'
@@ -16,16 +12,7 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/firestore';
 import { auth } from './lib/firebase';
-import { Dashboard } from './pages/Dashboard';
 import {GoogleAuthProvider, signInWithPopup, User} from 'firebase/auth'
-import { Chat } from './pages/Chat';
-import { Terms } from './pages/Terms';
-import Researcher from './pages/Researcher';
-import { StepOne } from './pages/StepOne';
-import { StepTwo } from './pages/StepTwo';
-import { BaremaPage } from './pages/BaremaPage';
-import { HomePageSimcc } from './pages/HomePageSimcc';
-import { Magazine } from './pages/Magazine';
 import { Maraba } from './pages/Maraba';
 import { Promo } from './pages/Promo';
 
@@ -105,32 +92,19 @@ export const App = () => {
             <Route path='/' >
             <Route path=':userId?' element={<Maraba/>}/>
             </Route>
-            <Route path='/search' element={<StepTwo/>}/>
-            <Route path='/bem-vindo' element={<HomePageSimcc/>}/>
-            <Route path='/discover' element={<Discover/>}/>
-            <Route path='/indicators' element={<Indicators/>}/>
-            <Route path='/pesquisadoresSelecionados' element={<PesquisadoresPage/>}/>
-            <Route path='/terms' element={<Terms/>}/>
-            <Route path='/login' element={<Login/>}/>
-            <Route path='/chat' element={<Chat/>}/>
+           
             <Route path='/result' element={<Home/>}/>
 
             <Route path='/maraba' element={<Maraba/>}/>
 
-            <Route path='/barema' element={<BaremaPage/>}/>
-            <Route path='/magazine' element={<Magazine/>}/>
+    
 
             <Route path='oferta'>
               <Route path=':userId/:term?' element={<Promo/>}/>
             </Route>
 
 
-            {user ? (
-              <Route path='/dashboard' element={<Dashboard/>}/>
-            ) : (
-              <div></div>
-            )}
-            
+         
           </Routes>
         </UserContext.Provider>
       </Router>

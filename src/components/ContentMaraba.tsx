@@ -145,7 +145,13 @@ export function ContentMaraba() {
             </Link>
           )
           })}
+
+         
             
+          </div>
+
+          <div className="px-6 md:px-16 my-16">
+            <div className="h-[300px] bg-green-400 rounded-md justify-center items-center p-12 flex"><h3 className="text-4xl font-bold text-white mb-4">Conheça a nova unidade Marabá </h3></div>
           </div>
 
           <div className="w-full grid grid-cols-2 px-6 md:px-16 gap-12 items-center py-24">
@@ -154,7 +160,7 @@ export function ContentMaraba() {
                     <h3 className="text-4xl font-bold text-green-500 max-w-[500px] mb-4">Variedade Inigualável </h3>
                     <p className="mb-6 text-gray-400 text-lg ">Explore um catálogo abrangente que engloba desde frutas frescas e vegetais crocantes até cortes selecionados de carnes e peixes. Nossa variedade de produtos é cuidadosamente selecionada para atender aos diferentes gostos e preferências.</p>
 
-                    <Link to={"/indicators"} className="w-fit whitespace-nowrap flex items-center gap-4 bg-green-400 text-white rounded-full px-6 py-2 justify-center hover:bg-blue-500  font-medium transition">
+                    <Link to={"/indicators"} className="w-fit whitespace-nowrap flex items-center gap-4 bg-green-400 text-white rounded-full px-6 py-2 justify-center hover:bg-green-500  font-medium transition">
                     <CaretDown size={16} className="text-white" /> Saiba mais
                     </Link>
                 </div>
@@ -201,6 +207,24 @@ export function ContentMaraba() {
             <div className="">
                     <h3 className="text-4xl font-bold text-gray-400 max-w-[500px] mb-4">Temos <strong className="bg-red-400 text-white">orgulho</strong> de ter um time completo!</h3>
                     <p className="mb-6 text-gray-400 text-lg max-w-[700px]">Conheça o nosso time de profissionais prontos para te atender</p>
+                </div>
+
+                <div className="grid grid-cols-10 gap-4">
+                  <div className="bg-gray-300 w-full h-32 rounded-md"></div>
+                  <div className="bg-gray-300 w-full h-32 rounded-md"></div>
+                  <div className="bg-gray-300 w-full h-32 rounded-md"></div>
+                  <div className="bg-gray-300 w-full h-32 rounded-md"></div>
+                  <div className="bg-gray-300 w-full h-32 rounded-md"></div>
+                  <div className="bg-gray-300 w-full h-32 rounded-md"></div>
+                  <div className="bg-gray-300 w-full h-32 rounded-md"></div>
+                  <div className="bg-gray-300 w-full h-32 rounded-md"></div>
+                  <div className="bg-gray-300 w-full h-32 rounded-md"></div>
+                  <div className="bg-gray-300 w-full h-32 rounded-md"></div>
+                  <div className="bg-gray-300 w-full h-32 rounded-md"></div>
+                  <div className="bg-gray-300 w-full h-32 rounded-md"></div>
+                  <div className="bg-gray-300 w-full h-32 rounded-md"></div>
+                  <div className="bg-gray-300 w-full h-32 rounded-md"></div>
+                  <div className="bg-gray-300 w-full h-32 rounded-md"></div>
                 </div>
             </div>
 

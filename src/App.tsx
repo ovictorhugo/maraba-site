@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import  { UserContext }  from '../src/contexts/context'
-import { Home } from './pages/Home';
 import { useState, useContext, useEffect } from 'react';
 
 
@@ -92,8 +91,7 @@ export const App = () => {
             <Route path='/' >
             <Route path=':userId?' element={<Maraba/>}/>
             </Route>
-           
-            <Route path='/result' element={<Home/>}/>
+          
 
             <Route path='/maraba' element={<Maraba/>}/>
 

@@ -1,6 +1,5 @@
 import { Logo } from "./Logo";
 import { Link } from "react-router-dom";
-import { Ilustracao } from "./Ilustracao";
 import { ArrowCircleDown, Info, Funnel, User, File, Buildings, PaperPlaneTilt, ChartLine, Question, SignIn, ListDashes, UserCirclePlus, UserCircle, BookOpen, Phone, MapPin } from "phosphor-react";
 
 import logo_1 from '../assets/logo_1.png';
@@ -8,8 +7,6 @@ import logo_2 from '../assets/logo_2.png';
 import logo_3 from '../assets/logo_3.png';
 import logo_4 from '../assets/logo_4.png';
 
-import { Pesquisadores } from "./Pesquisadores";
-import { Publicacoes } from "./Publicacoes";
 
 type Total = {
   organizations: string,

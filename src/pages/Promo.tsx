@@ -8,18 +8,13 @@ export function Promo() {
 
   const { userId, term } = useParams<{ userId: string, term: string }>();
 
-   // Provide default values for userId and term if they are undefined
-  const userIdOrDefault = userId || '';
-  const termOrDefault = term || '';
-
-  return (
-    <div>
+    return  (
+      <div>
       <div className=''>
-        <Header />
+        <Header/>
       </div>
-      {userId !== undefined && term !== undefined && term !== "" && (
-        <ContentPromo id={userIdOrDefault} term={termOrDefault} />
-      )}
+      {userId && term !== "" && <ContentPromo id={userId} />}
+     
     </div>
-  );
+    )
 }

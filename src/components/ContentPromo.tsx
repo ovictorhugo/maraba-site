@@ -4,7 +4,7 @@ import { MapPin, ShoppingCart } from "phosphor-react";
 
 interface Props {
     id: string,
-    term: string
+   
   }
 
   const GET_OFERTA_QUERY = gql `
